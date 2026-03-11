@@ -1,7 +1,17 @@
 body {
     background-color: #121212;
-    margin: 15px;
+    margin: 45px;
     padding: 0px;
+}
+
+* {
+    text-decoration: none;
+    font-family: patricstar;
+}
+
+@font-face {
+    font-family: patricstar;
+    src: url(PatrickHand-Regular.ttf);
 }
 
 h1 {
