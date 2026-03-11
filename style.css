@@ -1,0 +1,30 @@
+body {
+    background-color: #121212;
+    margin: 15px;
+    padding: 0px;
+}
+
+h1 {
+    color: #ededed;
+    text-align: center;
+    font-size: 100px;
+}
+
+button {
+    color: #000;
+    background-color: #0ff;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+input {
+    color: #ededed;
+    border-radius: 30px;
+    outline-width: 1.5px;
+    outline-color: #fff;
+}
+
+input::placeholder {
+    color: #555;
+}
