@@ -7,6 +7,7 @@ body {
 * {
     text-decoration: none;
     font-family: patricstar;
+    list-style-type: none;
 }
 
 @font-face {
@@ -23,18 +24,56 @@ h1 {
 button {
     color: #000;
     background-color: #0ff;
-    border-radius: 20px;
-    margin: 0px;
+    border-radius: 10px;
+    margin: 25 0 0 0;
     padding: 0px;
+    min-height: 40;
+    min-width: 80;
+    max-height: 40;
+    max-width: 80;
+    font-size: 15px;
 }
 
-input {
+textarea {
     color: #ededed;
-    border-radius: 30px;
-    outline-width: 1.5px;
+    border-radius: 15px;
+    border-width: 1.5px;
+    border-color: #fff;
     outline-color: #fff;
+    outline: 0px;
+    min-width: 80vh;
+    min-height: 30vh;
+    background-color: #121212;
+    padding: 10px;
+    vertical-align: top;
 }
 
-input::placeholder {
+textarea::placeholder {
     color: #555;
+}
+
+ul li {
+    max-width: 80px;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 75;
+    margin: 25 0 0 0;
+}
+
+.buttons {
+    justify-content: center;
+}
+
+select {
+    color: #000;
+    background-color: #ededed;
+    border-radius: 10px;
+    margin: 0 35;
+    padding: 0px;
+    min-height: 40;
+    min-width: 80;
+    font-size: 15px;
 }

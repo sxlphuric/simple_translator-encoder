@@ -5,27 +5,24 @@
     Simple translator/encoder
   </title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="https://j33569.github.io/1/main/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="https://j33569.github.io/1/main/favicon.svg">
 </head>
 
 <body>
+  <script src="script.js"></script>
   <h1>A simple encoder</h1>
-  <ul>
-    <li>
-      <button>Encode</button>
-    </li>
-    <li>
-      <button>Decode</button>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <input type="text" placeholder="put text to encode/decode here">
-    </li>
-    <li>
-      <output></output>
-    </li>
-  </ul>
+  <div class="buttons">
+    <button>Encode</button>
+    <div>
+      <select name="key" id="key">
+      </select>
+    </div>
+    <button>Decode</button>
+  </div>
+  <div>
+    <textarea type="text" placeholder="Put text to encode here"></textarea>
+    <textarea type="text" placeholder="Put text to decode here"></textarea>
+  </div>
 </body>
 
 </html>
