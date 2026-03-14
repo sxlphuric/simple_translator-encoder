@@ -9,18 +9,18 @@
 </head>
 
 <body>
-  <script src="script.js"></script>
   <h1>A simple encoder</h1>
   <p class="key">Key</p>
   <div class="buttons">
-    <button>Encode</button>
+    <button onclick="encode()">Encode</button>
     <input type="text" id="key" pattern="[0-9]{3}" maxlength="3" placeholder="Key">
-    <button>Decode</button>
+    <button onclick="decode()">Decode</button>
   </div>
   <div>
-    <textarea type="text" placeholder="Put text to encode here" id="encoder"></textarea>
-    <textarea type="text" placeholder="Put text to decode here" id="decoder"></textarea>
+    <textarea type="text" placeholder="Put text to encode here" id="ta1"></textarea>
+    <textarea type="text" placeholder="Put text to decode here" id="ta2"></textarea>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
