@@ -48,6 +48,10 @@ button {
     font-size: 15px;
 }
 
+.temporary{
+    margin: 0 10 0 10 !important; 
+}
+
 textarea {
     color: #ededed;
     border-radius: 15px;
