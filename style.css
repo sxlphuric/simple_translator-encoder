@@ -110,3 +110,9 @@ p.key {
     text-align: center;
     margin: 0px;
 }
+
+p.warning {
+    color: #f00;
+    text-align: center;
+    margin: 0px;
+}
