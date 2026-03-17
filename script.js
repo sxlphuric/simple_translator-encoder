@@ -1,5 +1,6 @@
 const encoder = document.getElementById("ta1");
 const decoder = document.getElementById("ta2");
+const key = document.getElementById("key");
 const DecodedToEncoded = {
     'A': '2111112111112000012011112', 'B': '2111112111112000012001112', 'C': '2111112111112000012000112',
     'D': '2111112111112000012000012', 'E': '2111112111112000012000002', 'F': '2111112111112000012100002',
@@ -44,17 +45,201 @@ const EncodedToDecoded = Object.fromEntries(Object.entries(DecodedToEncoded2).ma
 //the space is important--> ^ <--
 
 function encode() {
-    decoder.value = encoder.value
-        .toUpperCase()
-        .split('')
-        .map(char => DecodedToEncoded[char] || '?')
-        .join('');
+    if (key.value === 1) {
+        decoder.value = encoder.value
+            .toUpperCase()
+            .split('')
+            .map(char => DecodedToEncoded[char] || '?')
+            .replaceAll(0, 5)
+            .replaceAll(1, 4)
+            .replaceAll(5, 1)
+            .replaceAll(4, 0)
+            .join('');
+    }
+    else {
+        if (key.value === 2) {
+            decoder.value = encoder.value
+                .toUpperCase()
+                .split('')
+                .map(char => DecodedToEncoded[char] || '?')
+                .join('');
+        }
+        else {
+            if (key.value === 3) {
+                decoder.value = encoder.value
+                    .toUpperCase()
+                    .split('')
+                    .map(char => DecodedToEncoded[char] || '?')
+                    .join('');
+            }
+            else {
+                if (key.value === 4) {
+                    decoder.value = encoder.value
+                        .toUpperCase()
+                        .split('')
+                        .map(char => DecodedToEncoded[char] || '?')
+                        .join('');
+                }
+                else {
+                    if (key.vlaue === 5) {
+                        decoder.value = encoder.value
+                            .toUpperCase()
+                            .split('')
+                            .map(char => DecodedToEncoded[char] || '?')
+                            .join('');
+                    }
+                    else {
+                        if (key.value === 6) {
+                            decoder.value = encoder.value
+                                .toUpperCase()
+                                .split('')
+                                .map(char => DecodedToEncoded[char] || '?')
+                                .join('');
+                        }
+                        else {
+                            if (key.value === 7) {
+                                decoder.value = encoder.value
+                                    .toUpperCase()
+                                    .split('')
+                                    .map(char => DecodedToEncoded[char] || '?')
+                                    .join('');
+                            }
+                            else {
+                                if (key.value === 8) {
+                                    decoder.value = encoder.value
+                                        .toUpperCase()
+                                        .split('')
+                                        .map(char => DecodedToEncoded[char] || '?')
+                                        .join('');
+                                }
+                                else {
+                                    if (key.vlaue === 9) {
+                                        decoder.value = encoder.value
+                                            .toUpperCase()
+                                            .split('')
+                                            .map(char => DecodedToEncoded[char] || '?')
+                                            .join('');
+                                    }
+                                    else {
+                                        decoder.value = encoder.value
+                                            .toUpperCase()
+                                            .split('')
+                                            .map(char => DecodedToEncoded[char] || '?')
+                                            .join('');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 function decode() {
-    encoder.value = `2${decoder.value}2`
-        .trim()
-        .split('22')
-        .map(code => EncodedToDecoded[code] || '')
-        .join('');
+    if (key.value === 1) {
+        encoder.value = `2${decoder.value}2`
+            .trim()
+            .split('22')
+            .replace("0", "5")
+            .replace("1", "4")
+            .replace("5", "1")
+            .replace("4", "0")
+            .map(code => EncodedToDecoded[code] || '')
+            .join('');
+    }
+    else {
+        if (key.value === 2) {
+            encoder.value = `2${decoder.value}2`
+                .trim()
+                .split('22')
+                .map(code => EncodedToDecoded[code] || '')
+                .join('');
+        }
+        else {
+            if (key.value === 3) {
+                encoder.value = `2${decoder.value}2`
+                    .trim()
+                    .split('22')
+                    .map(code => EncodedToDecoded[code] || '')
+                    .join('');
+            }
+            else {
+                if (key.value === 4) {
+                    encoder.value = `2${decoder.value}2`
+                        .trim()
+                        .split('22')
+                        .map(code => EncodedToDecoded[code] || '')
+                        .join('');
+                }
+                else {
+                    if (key.vlaue === 5) {
+                        encoder.value = `2${decoder.value}2`
+                            .trim()
+                            .split('22')
+                            .map(code => EncodedToDecoded[code] || '')
+                            .join('');
+                    }
+                    else {
+                        if (key.value === 6) {
+                            encoder.value = `2${decoder.value}2`
+                                .trim()
+                                .split('22')
+                                .map(code => EncodedToDecoded[code] || '')
+                                .join('');
+                        }
+                        else {
+                            if (key.value === 7) {
+                                encoder.value = `2${decoder.value}2`
+                                    .trim()
+                                    .split('22')
+                                    .map(code => EncodedToDecoded[code] || '')
+                                    .join('');
+                            }
+                            else {
+                                if (key.value === 8) {
+                                    encoder.value = `2${decoder.value}2`
+                                        .trim()
+                                        .split('22')
+                                        .map(code => EncodedToDecoded[code] || '')
+                                        .join('');
+                                }
+                                else {
+                                    if (key.vlaue === 9) {
+                                        encoder.value = `2${decoder.value}2`
+                                            .trim()
+                                            .split('22')
+                                            .map(code => EncodedToDecoded[code] || '')
+                                            .join('');
+                                    }
+                                    else {
+                                        encoder.value = `2${decoder.value}2`
+                                            .trim()
+                                            .split('22')
+                                            .map(code => EncodedToDecoded[code] || '')
+                                            .join('');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+function copyDecoded() {
+    var copyText = document.getElementById("ta1");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+}
+
+function copyEncoded() {
+    var copyText = document.getElementById("ta2");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
 }
