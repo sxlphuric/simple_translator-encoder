@@ -6,21 +6,26 @@
   </title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="https://j33569.github.io/1/main/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <script src="script.js"></script>
+  
   <h1>A simple encoder</h1>
   <p class="key">Key</p>
   <div class="buttons">
-    <button>Encode</button>
-    <input type="text" id="key" pattern="[0-9]{3}" maxlength="3" placeholder="Key">
-    <button>Decode</button>
+    <button id="encode-copy">Copy</button>
+    <button id="encode-button">Encode</button>
+    <input type="text" id="key" pattern="[0-9]{3}" maxlength="3" placeholder="Key" value="123">
+    <button id="decode-button">Decode</button>
+    <button id="decode-copy">Copy</button>
   </div>
   <div>
-    <textarea type="text" placeholder="Put text to encode here" id="encoder"></textarea>
-    <textarea type="text" placeholder="Put text to decode here" id="decoder"></textarea>
+    <textarea type="text" placeholder="Put text to encode here" id="encode-text"></textarea>
+    <textarea type="text" placeholder="Put text to decode here" id="decode-text"></textarea>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
